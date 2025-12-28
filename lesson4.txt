@@ -1,0 +1,26 @@
+# Задание №1
+# Пользователь вводит стороны прямоугольника.
+# Выводим площадь и периметр.
+
+a = float(input())
+b = float(input())
+
+print(a * b)
+print(2 * (a + b))
+
+
+# Задание №2
+# Дано пятизначное целое число.
+# Выполняем вычисления по условию задачи.
+
+number = int(input())
+
+units = number % 10
+tens = (number // 10) % 10
+hundreds = (number // 100) % 10
+thousands = (number // 1000) % 10
+ten_thousands = number // 10000
+
+result = (tens ** units) * hundreds / (ten_thousands - thousands)
+
+print(float(result))
